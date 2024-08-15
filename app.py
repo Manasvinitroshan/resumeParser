@@ -1,10 +1,8 @@
-from app import create_app
-from flask import flask,request,render_template
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
-
 def resume():
     return render_template('resume.html')
 
