@@ -18,6 +18,7 @@
         justify-content: center; 
         align-items: center; 
         display:flex;
+        flex-direction: column
 
 
     }
@@ -34,6 +35,21 @@
 
 
     }
+
+    .text{
+
+         justify-content: center; 
+        align-items: center; 
+        display:flex;
+
+    }
+
+    .align{
+            justify-content: center; 
+        align-items: center; 
+        display:flex;
+        flex-direction: column
+    }
 </style>
 <body class="back">
     
@@ -49,6 +65,22 @@
             </ul>
     
         </div>
+    </div>
+
+    <div class="inner" style="margin-top:20px;">
+        <div class="container" style = "margin-top:20px;">
+
+            <h1 style="padding:20px" class="text">Upload the Resume</h1>
+            <form action = "/pred" method = "post" enctype = "multi-part/form-data" class="text">
+                
+                <div>
+                    <input type="file" name="resume" accept=".pdf", required class="align">
+                    <input type="submit" value="submit" class="align" style="margin-top:20px;">
+                </div>
+                
+
+            </form>
+
     </div>
     
     
