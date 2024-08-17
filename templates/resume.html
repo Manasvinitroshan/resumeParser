@@ -3,47 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask App</title>
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300&display=swap');
+    <title>Resume Screening App</title>
+</head>
 
-    <styles>
-    /* Base Styling */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        border: none;
-        outline: none;
-        scroll-behavior: smooth;
-        font-family: "Nunito", sans-serif;
+<style>
+
+    .back{
+
+        height: 100%;
+        padding: 25px;
+        color: black;
+        background-color: #00539f;
+        overflow: hidden;
+        justify-content: center; 
+        align-items: center; 
+        display:flex;
+
+
     }
 
-    :root {
-        --bg-color: #191f36;
-        --snd-bg-color: #262b40;
-        --text-color: #fff;
-        --main-color: #59B2F4;
-    }
+    .inner{
 
-    html {
-        font-size: 62.5%;
-        overflow-x: hidden;
-    }
+        height: auto;
+        padding: 25px;
+        color: black;
+        background-color: white;
+        border-radius: 8px;
+        width: 600px; 
+        
 
-    body {
-        background: var(--bg-color);
-        color: var(--text-color);
-    }
 
-    section {
-        min-height: 100vh;
-        padding: 10rem 9% 2rem;
     }
 </style>
+<body class="back">
+    
+    <div class="inner">
+        <div class="container" style = "margin-top:20px;">
 
-</head>
-<body>
-    <h1>Welcome to Flask!</h1>
+            <h1 style="padding:20px">Resume Screening App</h1>
+    
+            <ul>
+                <li>Resume Categorization</li>
+                <li>Resume Job Reccomendation</li>
+                <li>Resume Parsing (Information Extraction)</li>
+            </ul>
+    
+        </div>
+    </div>
+    
+    
+   
+
 </body>
 </html>
